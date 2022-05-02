@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    @media only screen and (max-width: 64em) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: $default-fs;
+    color: $dark-cl;
+    line-height: 1.7;
+}
+
+.section {
+    padding: 8rem 2rem;
+
+    @media only screen and (max-width: 30em) {
+        padding: 5rem 1rem;
+    }
+}

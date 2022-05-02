@@ -1,0 +1,33 @@
+.about {
+    background: $white-cl;
+
+    &__container {
+        width: $container-width;
+        max-width: 90%;
+        margin-inline: auto;
+        @include flexContainer(space-between);
+        gap: 3rem;
+
+        @media only screen and (max-width: 48em) {
+            flex-direction: column;
+        }
+    }
+
+    &__col--1 {
+        flex-basis: 45%;
+
+        & *+* {
+            margin-top: 3rem;
+        }
+    }
+
+    &__col--2 {
+        display: flex;
+        justify-content: flex-end;
+
+        & img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+}

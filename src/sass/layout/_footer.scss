@@ -1,0 +1,53 @@
+.footer {
+    padding: 4rem;
+    background: $black-cl;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 3rem;
+    }
+
+    &__box {
+        color: $white-cl;
+
+        &>p {
+            font-size: $small-fs;
+        }
+    }
+
+    &__socials {
+        display: flex;
+
+        & *+* {
+            margin-left: 2rem;
+        }
+    }
+
+    &__social {
+        & * i {
+            font-size: 2rem;
+            color: $orange--1;
+        }
+    }
+
+    &__email {
+        display: inline-block;
+        text-decoration: none;
+        color: $white-cl;
+        margin-left: 1rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__email--icon {
+        color: $orange--1;
+    }
+
+    &__copyright {
+        font-size: $small-fs;
+        color: $dark-cl--2;
+    }
+}

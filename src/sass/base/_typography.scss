@@ -1,0 +1,53 @@
+.heading__primary {
+    font-size: 3.2rem;
+    color: #c63535;
+}
+
+.heading__secondary {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 3rem;
+    color: $dark-cl;
+    letter-spacing: .3rem;
+
+    &--projects {
+        font-family: 'Architects Daughter', cursive;
+        font-size: 3rem;
+        color: $white-cl;
+    }
+}
+
+.heading__tertiary {
+    font-size: 2rem;
+    color: $white-cl;
+
+    &--footer {
+        color: $orange--1;
+    }
+}
+
+.paragraph {
+    font-size: $default-fs;
+}
+
+.html,
+.css,
+.java,
+.script {
+    font-weight: 600;
+}
+
+.html {
+    color: rgb(66, 66, 218);
+}
+
+.css {
+    color: rgb(235, 69, 39);
+}
+
+.java {
+    color: rgb(255, 224, 46);
+}
+
+.script {
+    color: $black-cl;
+}
