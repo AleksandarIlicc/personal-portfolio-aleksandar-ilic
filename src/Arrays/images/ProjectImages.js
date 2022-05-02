@@ -8,8 +8,8 @@ const projectImages = [
         '/images/portfolio/portfolio--2.png'
     ],
     [
-        'images/components/react-form-validation--1.jpg',
-        '/images/components/login-form--2.png'
+        'images/components/react-form-validation--1.png',
+        'images/components/react-form-validation--2.png'
     ],
     [
         '/images/building app/building-app--1.png',

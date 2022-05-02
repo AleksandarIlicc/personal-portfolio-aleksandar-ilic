@@ -17,7 +17,7 @@ const cardImages = [
     },
     {
         id: 2,
-        image: '/images/components/react-form-validation--1.jpg',
+        image: '/images/components/react-form-validation--1.png',
         title: 'React From Validation',
         date: 'Oktober 2021',
         githubLink: 'https://github.com/AleksandarIlicc/neumorphic-login-form-',
