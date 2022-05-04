@@ -10,14 +10,13 @@ import Zoom from 'react-reveal/Zoom';
 const Projects = () => {
     const [projectArr, setProjectArr] = useState(cardImages);
     const [projectImage, setProjectImage] = useState(projectImages)
-    const [showSliderImages, setShowSliderImages] = useState([]);
+    const [showGalleryImages, setShowGalleryImages] = useState([]);
     const [showPopup, setShowPopup] = useState(false);
     const numOfProjects = CardImages.length;
 
     const getProjectImage = (id) => {
-        const imagesToRender = projectImage[id];
-        setShowSliderImages([...imagesToRender]);
         setShowPopup(true);
+        return setShowGalleryImages([...projectImage[id]]);
     }
 
     return (
@@ -41,7 +40,7 @@ const Projects = () => {
             <PopUp
                 showPopup={showPopup}
                 setShowPopup={setShowPopup}
-                showSliderImages={showSliderImages}
+                showGalleryImages={showGalleryImages}
             />
 
         </section>
