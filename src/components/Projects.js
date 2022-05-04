@@ -11,12 +11,16 @@ const Projects = () => {
     const [projectArr, setProjectArr] = useState(cardImages);
     const [projectImage, setProjectImage] = useState(projectImages)
     const [showGalleryImages, setShowGalleryImages] = useState([]);
+    const [projectName, setProjectName] = useState('');
     const [showPopup, setShowPopup] = useState(false);
     const numOfProjects = CardImages.length;
 
     const getProjectImage = (id) => {
+        setShowGalleryImages([...projectImages[id]]);
         setShowPopup(true);
-        return setShowGalleryImages([...projectImage[id]]);
+        const arrProjectName = cardImages.map(obj => obj.title);
+        setProjectName([...arrProjectName[id]]);
+        return;
     }
 
     return (
@@ -41,6 +45,7 @@ const Projects = () => {
                 showPopup={showPopup}
                 setShowPopup={setShowPopup}
                 showGalleryImages={showGalleryImages}
+                projectName={projectName}
             />
 
         </section>

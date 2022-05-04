@@ -1,9 +1,6 @@
 import React from 'react';
 
-const PopUp = ({ showPopup, setShowPopup, showGalleryImages }) => {
-    console.log(showGalleryImages);
-    // const widnowSize = window.innerWidth;
-
+const PopUp = ({ showPopup, setShowPopup, showGalleryImages, projectName }) => {
     return (
         <div className={!showPopup ? "popup" : "popup popup__show"}>
             <div className="popup__window"> 
@@ -15,6 +12,7 @@ const PopUp = ({ showPopup, setShowPopup, showGalleryImages }) => {
                             </div>
                         ))
                     }
+                    <div className='gallery__project'>{projectName}</div>
                 </div>
             </div>
             <span className="popup__close" onClick={() => setShowPopup(false)}>
@@ -25,16 +23,3 @@ const PopUp = ({ showPopup, setShowPopup, showGalleryImages }) => {
 }
 
 export default PopUp;
-
-
-// {
-//     widnowSize > 600 ?
-//         <figure className="popup__img">
-//             <img src={showSliderImages[0]} alt="" />
-//         </figure>
-//         :
-
-//         <figure className="popup__img">
-//             <img src={showSliderImages[1]} alt="" />
-//         </figure>
-// }
