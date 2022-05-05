@@ -17,10 +17,13 @@ const projectImages = [
     //     'images/components/react-form-validation--1.png',
     //     'images/components/react-form-validation--2.png'
     // ],
-    // [
-    //     '/images/building app/building-app--1.png',
-    //     '/images/building app/building-app--2.png'
-    // ],
+    [
+        '/images/building app/building-app--1.png',
+        '/images/building app/building-app--2.png',
+        '/images/building app/building-app--3.png',
+        '/images/building app/building-app--4.png',
+        '/images/building app/building-app--5.png'
+    ],
     // [
     //     '/images/components/slider--1.png',
     //     '/images/components/slider--2.png'
