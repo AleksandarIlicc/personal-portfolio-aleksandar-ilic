@@ -41,14 +41,20 @@ const projectImages = [
     //     '/images/components/travel-card--1.png',
     //     '/images/components/travel-card--2.png'
     // ],
-    // [
-    //     '/images/post-app/react-post--1.png',
-    //     '/images/post-app/react-post--2.png'
-    // ],
-    // [
-    //     '/images/restaurant-app/restaurant--1.png',
-    //     '/images/restaurant-app/restaurant--2.png'
-    // ]
+    [
+        '/images/post-app/react-post--1.png',
+        '/images/post-app/react-post--2.png',
+        '/images/post-app/react-post--3.png',
+        '/images/post-app/react-post--4.png',
+        '/images/post-app/react-post--5.png'
+    ],
+    [
+        '/images/restaurant-app/restaurant--1.png',
+        '/images/restaurant-app/restaurant--2.png',
+        '/images/restaurant-app/restaurant--3.png',
+        '/images/restaurant-app/restaurant--4.png',
+        '/images/restaurant-app/restaurant--5.png'
+    ]
 
 ]
 
