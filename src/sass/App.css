@@ -316,30 +316,27 @@ body {
 .gallery {
   display: -ms-grid;
   display: grid;
+  grid-gap: 1rem;
+}
+
+@media only screen and (max-width: 48em) {
+  .gallery {
+    height: 90vh;
+    display: block;
+    overflow: scroll;
+  }
+}
+
+.gallery__website {
   -ms-grid-columns: (1fr)[8];
       grid-template-columns: repeat(8, 1fr);
   -ms-grid-rows: (5vw)[8];
       grid-template-rows: repeat(8, 5vw);
-  grid-gap: 1rem;
 }
 
-@media only screen and (max-width: 37.5em) {
-  .gallery {
-    -ms-grid-columns: (1fr)[6];
-        grid-template-columns: repeat(6, 1fr);
-    -ms-grid-rows: (8rem)[13];
-        grid-template-rows: repeat(13, 8rem);
-    grid-gap: 0.5rem;
-  }
-}
-
-@media only screen and (max-width: 25em) {
-  .gallery {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: (20rem)[14];
-        grid-template-rows: repeat(14, 20rem);
-  }
+.gallery__component {
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 .gallery__project {
