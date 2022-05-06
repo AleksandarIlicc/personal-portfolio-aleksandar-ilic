@@ -314,6 +314,7 @@ body {
 }
 
 .gallery {
+  height: 90vh;
   display: -ms-grid;
   display: grid;
   grid-gap: 1rem;
@@ -321,7 +322,6 @@ body {
 
 @media only screen and (max-width: 48em) {
   .gallery {
-    height: 90vh;
     display: block;
     overflow: scroll;
   }

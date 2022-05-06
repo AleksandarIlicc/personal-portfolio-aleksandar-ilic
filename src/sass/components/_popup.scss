@@ -65,11 +65,11 @@
 }
 
 .gallery {
+    height: 90vh;
     display: grid;
     grid-gap: 1rem;
 
     @media only screen and (max-width: 48em) {
-      height: 90vh;
       display: block;
       overflow: scroll;
     }
