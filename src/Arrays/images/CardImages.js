@@ -77,7 +77,7 @@ const cardImages = [
         title: 'React Post App',
         date: 'January 2022',
         githubLink: 'https://github.com/AleksandarIlicc/react-post-app',
-        netlifyLink: 'https://react-post-application.netlify.app',
+        netlifyLink: 'https://react-post-app-storage.netlify.app',
     },
     {
         id: 10,
