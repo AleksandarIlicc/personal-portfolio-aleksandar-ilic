@@ -40,6 +40,11 @@ const Footer = () => {
                                 <i className="fab fa-github"></i>
                             </a>
                         </div>
+                        <div className="footer__social">
+                            <a href="https://www.linkedin.com/in/aleksandar-ilic-3620b723a" target="_blank" rel="noreferrer">
+                                <i className="fab fa-linkedin"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
