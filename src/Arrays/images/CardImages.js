@@ -86,6 +86,14 @@ const cardImages = [
         date: 'April 2022',
         githubLink: 'https://github.com/AleksandarIlicc/react-restaurant-app',
         netlifyLink: 'https://react-restaurant-application.netlify.app',
+    },
+    {
+        id: 11,
+        image: '/images/components/calculator--1.png',
+        title: 'React Calculator',
+        date: 'May 2022',
+        githubLink: 'https://github.com/AleksandarIlicc/react-calculator',
+        netlifyLink: 'https://react-calculator-mini-app.netlify.app',
     }
 ]
 

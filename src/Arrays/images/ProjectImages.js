@@ -57,6 +57,10 @@ const projectImages = [
         '/images/restaurant-app/restaurant--3.png',
         '/images/restaurant-app/restaurant--4.png',
         '/images/restaurant-app/restaurant--5.png'
+    ],
+    [
+        '/images/components/calculator--1.png',
+        '/images/components/calculator--2.png'
     ]
 
 ]
