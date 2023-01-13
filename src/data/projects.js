@@ -1,4 +1,4 @@
-const cardImages = [
+export const data = [
   {
     id: 0,
     image: `/images/recipe-app/recipe-app--1.png`,
@@ -97,5 +97,3 @@ const cardImages = [
     netlifyLink: "https://react-calculator-mini-app.netlify.app",
   },
 ];
-
-export default cardImages;
