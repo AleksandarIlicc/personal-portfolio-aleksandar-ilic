@@ -96,4 +96,20 @@ export const data = [
     githubLink: "https://github.com/AleksandarIlicc/react-calculator",
     netlifyLink: "https://react-calculator-mini-app.netlify.app",
   },
+  {
+    id: 12,
+    image: "/images/mango-online-shop/react-mango-shop--1.png",
+    title: "Mango Online Shop",
+    date: "September 2022",
+    githubLink: "",
+    netlifyLink: "",
+  },
+  {
+    id: 13,
+    image: "/images/angular-contact-app/angular-contact-app--1.png",
+    title: "Angular Contact Application",
+    date: "April 2023",
+    githubLink: "https://github.com/AleksandarIlicc/angular-contact-app",
+    netlifyLink: "https://angular-contact-application.netlify.app/",
+  },
 ];
