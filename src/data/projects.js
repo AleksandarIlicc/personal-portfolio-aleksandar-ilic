@@ -1,6 +1,7 @@
 export const data = [
   {
     id: 0,
+    colorNumber: 2,
     image: `/images/recipe-app/recipe-app--1.png`,
     title: "Recipe Application",
     date: "Oktober 2021",
@@ -9,6 +10,7 @@ export const data = [
   },
   {
     id: 1,
+    colorNumber: 1,
     image: `/images/portfolio/portfolio--1.png`,
     title: "Portfolio Website",
     date: "Oktober 2021",
@@ -17,6 +19,7 @@ export const data = [
   },
   {
     id: 2,
+    colorNumber: 3,
     image: "/images/components/react-form-validation--1.png",
     title: "React From Validation",
     date: "Oktober 2021",
@@ -25,7 +28,8 @@ export const data = [
   },
   {
     id: 3,
-    image: `/images/building app/building-app--1.png`,
+    colorNumber: 4,
+    image: `/images/building-app/building-app--1.png`,
     title: "Building Website",
     date: "November 2021",
     githubLink: "https://github.com/AleksandarIlicc/building-website",
@@ -33,6 +37,7 @@ export const data = [
   },
   {
     id: 4,
+    colorNumber: 2,
     image: "/images/components/slider--1.png",
     title: "Slider component",
     date: "November 2021",
@@ -41,6 +46,7 @@ export const data = [
   },
   {
     id: 5,
+    colorNumber: 1,
     image: "/images/components/accordion--1.png",
     title: "Accordion component",
     date: "November 2021",
@@ -49,6 +55,7 @@ export const data = [
   },
   {
     id: 6,
+    colorNumber: 2,
     image: "/images/components/animated-card--1.png",
     title: "Animated Card component",
     date: "November 2021",
@@ -57,6 +64,7 @@ export const data = [
   },
   {
     id: 7,
+    colorNumber: 3,
     image: "/images/components/todo--1.png",
     title: "ToDo List component",
     date: "December 2021",
@@ -65,6 +73,7 @@ export const data = [
   },
   {
     id: 8,
+    colorNumber: 1,
     image: "/images/components/travel-card--1.png",
     title: "Travel Card component",
     date: "December 2021",
@@ -73,6 +82,7 @@ export const data = [
   },
   {
     id: 9,
+    colorNumber: 4,
     image: "/images/post-app/react-post--1.png",
     title: "React Post App",
     date: "January 2022",
@@ -82,6 +92,7 @@ export const data = [
   },
   {
     id: 10,
+    colorNumber: 3,
     image: "/images/restaurant-app/restaurant--1.png",
     title: "React Restaurant App",
     date: "April 2022",
@@ -90,6 +101,7 @@ export const data = [
   },
   {
     id: 11,
+    colorNumber: 4,
     image: "/images/components/calculator--1.png",
     title: "React Calculator",
     date: "May 2022",
@@ -98,14 +110,17 @@ export const data = [
   },
   {
     id: 12,
+    colorNumber: 2,
     image: "/images/mango-online-shop/react-mango-shop--1.png",
     title: "Mango Online Shop",
     date: "September 2022",
-    githubLink: "",
-    netlifyLink: "",
+    githubLink: "https://github.com/AleksandarIlicc/online-shop-mango",
+    netlifyLink: "https://mango-online-shop.netlify.app/",
+    inProgress: true,
   },
   {
     id: 13,
+    colorNumber: 1,
     image: "/images/angular-contact-app/angular-contact-app--1.png",
     title: "Angular Contact Application",
     date: "April 2023",
