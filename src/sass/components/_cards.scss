@@ -1,11 +1,11 @@
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
-  height: 30rem;
+  height: 40rem;
   transition: all 0.3s ease;
 
   &__side {
-    height: 30rem;
+    height: 100%;
     width: 100%;
     text-decoration: none;
     color: $orange--1;
@@ -71,10 +71,17 @@
 
   &__content {
     padding: 2rem;
+    color: $white-cl;
   }
 
   &__para {
-    color: $white-cl;
+    color: inherit;
+    margin-bottom: 1rem;
+  }
+
+  &__tech {
+    color: inherit;
+    text-transform: uppercase;
   }
 
   &__click {

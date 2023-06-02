@@ -21,6 +21,13 @@ const Card = ({ data, getProjectImage }) => {
               : data.title}
           </h3>
           <p className="card__para">{data.date}</p>
+          <div>
+            {data.technologies.map((tech, index) => (
+              <span className="card__tech">
+                {index === tech.length - 1 ? tech + "." : tech + ","} {""}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
       <div className="card__side card__side--back">

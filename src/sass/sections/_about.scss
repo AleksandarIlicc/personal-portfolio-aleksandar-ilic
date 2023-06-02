@@ -1,33 +1,37 @@
 .about {
-    background: $white-cl;
+  background: $white-cl;
 
-    &__container {
-        width: $container-width;
-        max-width: 90%;
-        margin-inline: auto;
-        @include flexContainer(space-between);
-        gap: 3rem;
+  &__container {
+    width: $container-width;
+    max-width: 90%;
+    margin-inline: auto;
+    @include flexContainer(space-between);
+    gap: 3rem;
 
-        @media only screen and (max-width: 48em) {
-            flex-direction: column;
-        }
+    @media only screen and (max-width: 48em) {
+      flex-direction: column;
     }
+  }
 
-    &__col--1 {
-        flex-basis: 45%;
+  &__col--1 {
+    flex-basis: 55%;
 
-        & *+* {
-            margin-top: 3rem;
-        }
+    & * + * {
+      margin-top: 3rem;
     }
+  }
 
-    &__col--2 {
-        display: flex;
-        justify-content: flex-end;
+  &__col--2 {
+    @include flexContainer(flex-end);
+    flex-basis: 45%;
 
-        & img {
-            display: block;
-            max-width: 100%;
-        }
+    & img {
+      display: block;
+      max-width: 100%;
     }
+  }
+}
+
+.technologies {
+  font-weight: 600;
 }
