@@ -76,7 +76,7 @@ export const data = [
     ],
     githubLink: "https://github.com/AleksandarIlicc/online-shop-mango",
     netlifyLink: "https://mango-online-shop.netlify.app/",
-    inProgress: false,
+    inProgress: true,
   },
   {
     id: 8,
