@@ -14,19 +14,16 @@ html {
   @media only screen and (max-width: 64em) {
     font-size: 50%;
   }
+
+  @media only screen and (max-width: 30em) {
+    font-size: 48%;
+  }
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   font-size: $default-fs;
+  background-color: $dark-blue-cl;
   color: $dark-cl;
   line-height: 1.7;
-}
-
-.section {
-  padding: 5rem 2rem;
-
-  @media only screen and (max-width: 30em) {
-    padding: 3rem 1rem;
-  }
 }

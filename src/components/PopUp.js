@@ -1,5 +1,3 @@
-import React from "react";
-
 const PopUp = ({ showPopup, setShowPopup, projectImage }) => {
   return (
     <div className={!showPopup ? "popup" : "popup popup--show"}>

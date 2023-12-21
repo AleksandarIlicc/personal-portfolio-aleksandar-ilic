@@ -1,16 +1,17 @@
-import "./sass/App.css";
 import { BrowserRouter as Router } from "react-router-dom";
 import { About, Footer, Header, Nav, Projects, Skills } from "./components";
+
+import "./sass/App.css";
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Nav />
+        {/* <Nav /> */}
         <Header />
         <main>
-          <About />
           <Skills />
+          <About />
           <Projects />
           <Footer />
         </main>

@@ -1,53 +1,42 @@
 .heading__primary {
-    font-size: 3.2rem;
-    color: #c63535;
+  font-size: 5rem;
+  color: $ligth-blue-cl--1;
+  max-width: 70rem;
+  margin-bottom: 3rem;
+
+  @media only screen and (max-width: 81.25em) {
+    font-size: 4rem;
+  }
 }
 
 .heading__secondary {
-    font-family: 'Architects Daughter', cursive;
-    font-size: 3rem;
-    color: $dark-cl;
-    letter-spacing: .3rem;
+  position: relative;
+  font-family: "Montserrat", cursive;
+  font-weight: 400;
+  font-size: 3rem;
+  color: $dark-cl;
+  padding-bottom: 1rem;
+  letter-spacing: 0.3rem;
 
-    &--projects {
-        font-family: 'Architects Daughter', cursive;
-        font-size: 3rem;
-        color: $white-cl;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 5rem;
+    height: 3px;
+    background-color: $ligth-green-cl--1;
+  }
+
+  &--white {
+    font-family: "Montserrat", cursive;
+    font-size: 3rem;
+    color: $white-cl;
+  }
 }
 
 .heading__tertiary {
-    font-size: 2rem;
-    color: $white-cl;
-
-    &--footer {
-        color: $orange--1;
-    }
-}
-
-.paragraph {
-    font-size: $default-fs;
-}
-
-.html,
-.css,
-.java,
-.script {
-    font-weight: 600;
-}
-
-.html {
-    color: rgb(66, 66, 218);
-}
-
-.css {
-    color: rgb(235, 69, 39);
-}
-
-.java {
-    color: rgb(255, 224, 46);
-}
-
-.script {
-    color: $black-cl;
+  font-size: 2rem;
+  color: $ligth-green-cl--1;
 }

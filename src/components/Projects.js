@@ -1,29 +1,26 @@
-/* eslint-disable no-unused-vars */
-import React, { useState } from "react";
+import { useState } from "react";
 import { Card, PopUp } from "../components";
 import { data } from "../data/projects";
-import Zoom from "react-reveal/Zoom";
+import { Zoom } from "react-awesome-reveal";
 
 const Projects = () => {
   const [projects] = useState(data);
   const [projectImage, setProjectImage] = useState("");
   const [showPopup, setShowPopup] = useState(false);
 
-  const getProjectImage = (id) => {
-    setProjectImage(projects[id].image);
+  const getProjectImage = (index) => {
+    setProjectImage(projects[index].image);
     setShowPopup(true);
   };
 
   return (
-    <section id="section--3" className="projects section">
-      <h1 className="heading__secondary--projects centar-text">
-        My {projects.length} Projects
-      </h1>
+    <section id="projects" className="projects section">
+      <h1 className="heading__secondary--white centar-text">Projects</h1>
 
       <div className="projects__container mt-large">
-        {projects.map((data) => (
-          <Zoom>
-            <Card key={data.id} data={data} getProjectImage={getProjectImage} />
+        {projects.map((data, index) => (
+          <Zoom key={data.id}>
+            <Card data={data} index={index} getProjectImage={getProjectImage} />
           </Zoom>
         ))}
       </div>

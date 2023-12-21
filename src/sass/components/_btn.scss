@@ -1,31 +1,33 @@
 .btn {
-    width: 15rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    padding: 1.3rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 1.3rem;
+  margin-top: 3rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: $white-cl;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-0.5rem);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &__book {
     margin-top: 3rem;
-    border: none;
-    border-radius: .5rem;
+    padding: 2rem;
     color: $white-cl;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    transition: all .3s ease-out;
-    cursor: pointer;
+    background: $ligth-green-cl--2;
+  }
 
-    &:hover {
-        transform: translateY(-.5rem);
-    }
-
-    &:active {
-        transform: translateY(0);
-    }
-
-    &__header {
-        background: linear-gradient(90deg, $orange--1, $orange--2);
-    }
-
-    &__card {
-        background: linear-gradient(90deg, $black-cl, $dark-cl--2);
-        color: $white-cl;
-    }
+  &__card {
+    background: $ligth-blue-cl--2;
+    color: $dark-cl;
+  }
 }

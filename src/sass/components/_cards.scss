@@ -8,7 +8,7 @@
     height: 100%;
     width: 100%;
     text-decoration: none;
-    color: $orange--1;
+    color: $ligth-blue-cl--1;
     position: absolute;
     top: 0;
     left: 0;
@@ -17,23 +17,11 @@
 
     &--front {
       box-shadow: 0.3rem 0.3rem 0.9rem rgba(106, 106, 106, 0.7);
-
-      &--1 {
-        background: rgb(59, 121, 217);
-      }
-      &--2 {
-        background: rgb(217, 59, 59);
-      }
-      &--3 {
-        background: rgb(49, 200, 80);
-      }
-      &--4 {
-        background: rgb(200, 57, 117);
-      }
+      background-color: #1e5799;
     }
 
     &--back {
-      background: linear-gradient(120deg, $orange--1, $orange--2);
+      background: linear-gradient(0deg, $blue-cl 40%, $dark-blue-cl 100%);
       padding: 2rem;
       text-align: center;
       box-shadow: 0.3rem 0.3rem 0.9rem rgba(0, 0, 0, 0.7);
@@ -44,7 +32,7 @@
       & a {
         font-weight: 600;
         text-decoration: none;
-        color: $black-cl;
+        color: $ligth-green-cl--1;
       }
     }
   }
@@ -74,7 +62,8 @@
     color: $white-cl;
   }
 
-  &__para {
+  &__date {
+    font-size: 1.3rem;
     color: inherit;
     margin-bottom: 1rem;
   }

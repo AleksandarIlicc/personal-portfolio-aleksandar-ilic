@@ -1,26 +1,94 @@
-import React from 'react';
-import Flip from 'react-reveal/Flip';
+import { Link as ScrollLink } from "react-scroll";
+import { Bounce, Slide } from "react-awesome-reveal";
+import { headerIcons } from "../data/header-icons";
 
 const Header = () => {
-    return (
-        <header className="header">
-            <div className="header__container">
-                <div className="header__box">
-                    <Flip left delay={500}>
-                        <h1 className="heading__primary heading--anm mb-medium">
-                            Looking for Frontend Developer?
-                        </h1>
-                    </Flip>
-                    <p className="header__para para--anm">Hi everyone, I am Aleksandar Ilic a frontend developer living in Nis,
-                        Serbia.
-                    </p>
-                    <a href="#section--3">
-                        <button className="btn btn__header">See projects</button>
-                    </a>
-                </div>
-            </div>
-        </header>
-    )
-}
+  return (
+    <header id="home" className="header">
+      <aside className="header__aside">
+        <div className="flex flex-col items-center justify-center mb-[10rem]">
+          <figure className="header__profile-img">
+            <img src="/images/profile-image.png" alt="Profile image" />
+          </figure>
+          <span className="text-[2rem]">Web Developer</span>
+        </div>
+
+        <div>
+          {headerIcons.map(({ src, alt, text, sectionId }, index) => {
+            return (
+              <div key={index} className="header__aside-link">
+                <img src={src} alt={alt} />
+                <Slide cascade={false} direction="down" delay={index * 200}>
+                  <ScrollLink
+                    activeClass="active"
+                    to={sectionId}
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                  >
+                    {text}
+                  </ScrollLink>
+                </Slide>
+              </div>
+            );
+          })}
+        </div>
+      </aside>
+
+      <main className="header__main">
+        <div>
+          <Slide direction="down">
+            <h1 className="heading__primary">
+              Grow your online business presence with Webflow.
+            </h1>
+          </Slide>
+
+          <Slide direction="down">
+            <p className="header__text">
+              Enhance your digital footprint and expand your online business
+              effortlessly through the power of <span>Webflow</span>. Elevate
+              your brand's visibility, captivate your audience, and{" "}
+              <span>streamline your online presence.</span>
+            </p>
+          </Slide>
+
+          <ScrollLink
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            <Slide>
+              <button className="btn btn__book" href="contact">
+                Book an Appointment
+              </button>
+            </Slide>
+          </ScrollLink>
+        </div>
+
+        <div className="header__card-box">
+          <div className="header__card">
+            <img src="/images/skill-icons/webflow.png" />
+            <p>Webflow Development</p>
+          </div>
+
+          <div className="header__card">
+            <img src="/images/skill-icons/atom.png" />
+            <p>Front-end Development</p>
+          </div>
+        </div>
+      </main>
+
+      <div className="full-name-box">
+        <Bounce>
+          <h2 className="full-name">Aleksandar Ilic</h2>
+        </Bounce>
+      </div>
+    </header>
+  );
+};
 
 export default Header;
