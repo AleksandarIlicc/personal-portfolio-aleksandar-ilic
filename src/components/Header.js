@@ -1,5 +1,5 @@
 import { Link as ScrollLink } from "react-scroll";
-// import { Bounce, Slide } from "react-awesome-reveal";
+import { Bounce, Slide } from "react-awesome-reveal";
 import { headerIcons } from "../data/header-icons";
 
 const Header = () => {
@@ -38,11 +38,11 @@ const Header = () => {
 
       <main className="header__main">
         <div>
-          {/* <Slide direction="down"> */}
-          <h1 className="heading__primary">
-            Grow your online business presence with Webflow.
-          </h1>
-          {/* </Slide> */}
+          <Slide direction="down">
+            <h1 className="heading__primary">
+              Grow your online business presence with Webflow.
+            </h1>
+          </Slide>
 
           {/* <Slide direction="down"> */}
           <p className="header__text">
