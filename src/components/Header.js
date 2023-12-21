@@ -1,5 +1,5 @@
 import { Link as ScrollLink } from "react-scroll";
-import { Bounce, Slide } from "react-awesome-reveal";
+// import { Bounce, Slide } from "react-awesome-reveal";
 import { headerIcons } from "../data/header-icons";
 
 const Header = () => {
@@ -18,18 +18,18 @@ const Header = () => {
             return (
               <div key={index} className="header__aside-link">
                 <img src={src} alt={alt} />
-                <Slide cascade={false} direction="down" delay={index * 200}>
-                  <ScrollLink
-                    activeClass="active"
-                    to={sectionId}
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                  >
-                    {text}
-                  </ScrollLink>
-                </Slide>
+                {/* <Slide cascade={false} direction="down" delay={index * 200}> */}
+                <ScrollLink
+                  activeClass="active"
+                  to={sectionId}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={500}
+                >
+                  {text}
+                </ScrollLink>
+                {/* </Slide> */}
               </div>
             );
           })}
@@ -38,20 +38,20 @@ const Header = () => {
 
       <main className="header__main">
         <div>
-          <Slide direction="down">
-            <h1 className="heading__primary">
-              Grow your online business presence with Webflow.
-            </h1>
-          </Slide>
+          {/* <Slide direction="down"> */}
+          <h1 className="heading__primary">
+            Grow your online business presence with Webflow.
+          </h1>
+          {/* </Slide> */}
 
-          <Slide direction="down">
-            <p className="header__text">
-              Enhance your digital footprint and expand your online business
-              effortlessly through the power of <span>Webflow</span>. Elevate
-              your brand's visibility, captivate your audience, and{" "}
-              <span>streamline your online presence.</span>
-            </p>
-          </Slide>
+          {/* <Slide direction="down"> */}
+          <p className="header__text">
+            Enhance your digital footprint and expand your online business
+            effortlessly through the power of <span>Webflow</span>. Elevate your
+            brand's visibility, captivate your audience, and{" "}
+            <span>streamline your online presence.</span>
+          </p>
+          {/* </Slide> */}
 
           <ScrollLink
             activeClass="active"
@@ -61,11 +61,11 @@ const Header = () => {
             offset={-70}
             duration={500}
           >
-            <Slide>
-              <button className="btn btn__book" href="contact">
-                Book an Appointment
-              </button>
-            </Slide>
+            {/* <Slide> */}
+            <button className="btn btn__book" href="contact">
+              Book an Appointment
+            </button>
+            {/* </Slide> */}
           </ScrollLink>
         </div>
 
@@ -83,9 +83,9 @@ const Header = () => {
       </main>
 
       <div className="full-name-box">
-        <Bounce>
-          <h2 className="full-name">Aleksandar Ilic</h2>
-        </Bounce>
+        {/* <Bounce> */}
+        <h2 className="full-name">Aleksandar Ilic</h2>
+        {/* </Bounce> */}
       </div>
     </header>
   );

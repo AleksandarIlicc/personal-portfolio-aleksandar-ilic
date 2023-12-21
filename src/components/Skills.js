@@ -1,4 +1,4 @@
-import { Fade, Bounce } from "react-awesome-reveal";
+// import { Fade, Bounce } from "react-awesome-reveal";
 import { skillIcons } from "../data/skill-icons";
 
 const Skills = () => {
@@ -11,17 +11,17 @@ const Skills = () => {
       <div className="container skills__box">
         {skillIcons.map(({ src, alt }, index, icons) => {
           return index === icons.length - 1 ? (
-            <Bounce key={index} right>
-              <figure className="skills__img">
-                <img src={src} alt={alt} />
-              </figure>
-            </Bounce>
+            // <Bounce key={index} right>
+            <figure className="skills__img">
+              <img src={src} alt={alt} />
+            </figure>
           ) : (
-            <Fade key={index} top delay={100 * index}>
-              <figure className="skills__img">
-                <img src={src} alt={alt} />
-              </figure>
-            </Fade>
+            // </Bounce>
+            // <Fade key={index} top delay={100 * index}>
+            <figure className="skills__img">
+              <img src={src} alt={alt} />
+            </figure>
+            // </Fade>
           );
         })}
       </div>
