@@ -1,6 +1,6 @@
 import Lottie from "lottie-react";
 import { Fade } from "react-awesome-reveal";
-import animationAboutSection from "../animation/animation-lottie.json";
+// import animationAboutSection from "../animation/animation-lottie.json";
 
 const About = () => {
   return (
@@ -49,11 +49,11 @@ const About = () => {
             </div>
           </Fade>
         </div>
-        <div>
+        {/* <div>
           <Fade direction="right">
             <Lottie animationData={animationAboutSection} />
           </Fade>
-        </div>
+        </div> */}
       </div>
     </section>
   );
