@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Card, PopUp } from "../components";
 import { data } from "../data/projects";
-// import { Zoom } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 const Projects = () => {
   const [projects] = useState(data);
@@ -19,9 +19,9 @@ const Projects = () => {
 
       <div className="projects__container mt-large">
         {projects.map((data, index) => (
-          // <Zoom key={data.id}>
-          <Card data={data} index={index} getProjectImage={getProjectImage} />
-          // </Zoom>
+          <Zoom key={data.id}>
+            <Card data={data} index={index} getProjectImage={getProjectImage} />
+          </Zoom>
         ))}
       </div>
 
