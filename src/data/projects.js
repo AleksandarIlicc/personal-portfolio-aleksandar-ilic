@@ -8,6 +8,7 @@ export const data = [
     technologies: ["html", "css", "javascript"],
     githubLink: "https://github.com/AleksandarIlicc/recipe-app",
     netlifyLink: "https://recipe-application-js.netlify.app",
+    type: "javascript",
   },
   // {
   //   id: 2,
@@ -48,6 +49,7 @@ export const data = [
     technologies: ["html", "css", "javascript", "react"],
     githubLink: "https://github.com/AleksandarIlicc/react-restaurant-app",
     netlifyLink: "https://react-restaurant-application.netlify.app",
+    type: "react",
   },
   // {
   //   id: 6,
@@ -77,6 +79,7 @@ export const data = [
     githubLink: "https://github.com/AleksandarIlicc/online-shop-mango",
     netlifyLink: "https://mango-online-shop.netlify.app/",
     inProgress: true,
+    type: "react",
   },
   {
     id: 8,
@@ -94,5 +97,6 @@ export const data = [
     ],
     githubLink: "https://github.com/AleksandarIlicc/angular-contact-app",
     netlifyLink: "https://angular-contact-application.netlify.app/",
+    type: "angular",
   },
 ];

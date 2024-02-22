@@ -1,18 +1,19 @@
-@import 'abstract/mixin';
-@import 'abstract/variables';
+@import "abstract/mixin";
+@import "abstract/variables";
 
-@import 'base/base';
-@import 'base/typography';
-@import 'base/utilities';
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-@import 'components/btn';
-@import 'components/cards';
-@import 'components/popup';
+@import "components/btn";
+@import "components/cards";
+@import "components/fullName";
+@import "components/popup";
 
-@import 'layout/footer';
-@import 'layout/header';
-@import 'layout/navigation';
+@import "layout/footer";
+@import "layout/header";
+@import "layout/navigation";
 
-@import 'sections/about';
-@import 'sections/projects';
-@import 'sections/skills';
+@import "sections/about";
+@import "sections/projects";
+@import "sections/skills";

@@ -6,17 +6,34 @@
   background-position: left;
   background-attachment: fixed;
 
+  &__menu {
+    display: flex;
+    justify-content: center;
+
+    ul {
+      padding: 1rem 3rem;
+      border-radius: 0.5rem;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    ul li {
+      color: $white-cl;
+      cursor: pointer;
+    }
+  }
+
   &__container {
     width: 90%;
     margin-inline: auto;
     margin-top: 5rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    grid-gap: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
 
-    @media only screen and (max-width: 48em) {
-      grid-template-columns: repeat(auto-fit, minmax(22em, 1fr));
-      grid-gap: 3rem;
+    & > div {
+      width: 25rem;
+      height: 40rem;
+      flex: 1 1 auto;
     }
   }
 }

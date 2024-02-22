@@ -259,6 +259,49 @@ body {
   border-top: 3px solid #1e5799;
 }
 
+.full-name-box {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10rem;
+  margin-top: -10%;
+}
+@media only screen and (max-width: 56.25em) {
+  .full-name-box {
+    justify-content: center;
+  }
+}
+
+.full-name {
+  font-family: "Roboto", sans-serif;
+  font-size: 16rem;
+  line-height: 1;
+  color: rgb(255, 255, 255);
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
+@media only screen and (max-width: 90em) {
+  .full-name {
+    font-size: 12rem;
+  }
+}
+@media only screen and (max-width: 71.87em) {
+  .full-name {
+    font-size: 11rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .full-name {
+    font-size: 8rem;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .full-name {
+    font-size: 6rem;
+  }
+}
+
 .popup {
   width: 100vw;
   height: 100vh;
@@ -512,54 +555,6 @@ body {
   text-align: center;
 }
 
-.full-name-box {
-  position: absolute;
-  right: 0;
-  bottom: 3rem;
-  left: 0;
-  padding-left: 20rem;
-  padding-right: 5rem;
-  display: flex;
-  justify-content: flex-end;
-}
-@media only screen and (max-width: 56.25em) {
-  .full-name-box {
-    padding-left: 5rem;
-    justify-content: center;
-  }
-}
-
-.full-name {
-  font-family: "Roboto", sans-serif;
-  font-size: 16rem;
-  line-height: 1;
-  color: rgb(255, 255, 255);
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(255, 255, 255);
-}
-@media only screen and (max-width: 90em) {
-  .full-name {
-    font-size: 12rem;
-  }
-}
-@media only screen and (max-width: 71.87em) {
-  .full-name {
-    font-size: 11rem;
-  }
-}
-@media only screen and (max-width: 56.25em) {
-  .full-name {
-    font-size: 8rem;
-    text-align: center;
-  }
-}
-@media only screen and (max-width: 30em) {
-  .full-name {
-    font-size: 6rem;
-  }
-}
-
 .nav {
   width: 100%;
   height: 8rem;
@@ -706,19 +701,31 @@ body {
   background-position: left;
   background-attachment: fixed;
 }
+.projects__menu {
+  display: flex;
+  justify-content: center;
+}
+.projects__menu ul {
+  padding: 1rem 3rem;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.projects__menu ul li {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+}
 .projects__container {
   width: 90%;
   margin-inline: auto;
   margin-top: 5rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-  grid-gap: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
-@media only screen and (max-width: 48em) {
-  .projects__container {
-    grid-template-columns: repeat(auto-fit, minmax(22em, 1fr));
-    grid-gap: 3rem;
-  }
+.projects__container > div {
+  width: 25rem;
+  height: 40rem;
+  flex: 1 1 auto;
 }
 
 .skills {

@@ -6,3 +6,4 @@ export { default as Nav } from "./Nav";
 export { default as PopUp } from "./PopUp";
 export { default as Projects } from "./Projects";
 export { default as Skills } from "./Skills";
+export { default as FullName } from "./FullName";
