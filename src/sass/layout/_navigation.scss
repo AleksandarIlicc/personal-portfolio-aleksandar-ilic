@@ -2,7 +2,7 @@
   width: 100%;
   height: $nav-ht;
   padding: 1.3rem 4rem;
-  background: $black-cl;
+  background: $dark-blue-cl;
   @include flexContainer(space-between);
   transition: opacity 0.3s ease;
   z-index: 1000;

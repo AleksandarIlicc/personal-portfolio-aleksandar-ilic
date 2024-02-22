@@ -25,13 +25,13 @@ const Nav = () => {
 
   return (
     <nav className={!stickyNav ? "nav" : "nav nav__sticky"} ref={nav}>
-      <Bounce>
+      {/* <Bounce>
         <div className="nav__logo">
           <Link to="index.html">
             <img src="/images/logo.jpg" alt="logo" />
           </Link>
         </div>
-      </Bounce>
+      </Bounce> */}
 
       <Fade down cascade damping={0.1}>
         <ul className={!openNav ? "nav__list" : "nav__list nav__list--active"}>
