@@ -21,9 +21,10 @@ const Card = ({ data, index, getProjectImage }) => {
           </h3>
           <p className="card__date">{data.date}</p>
           <div>
-            {data.technologies.map((tech, index) => (
+            {data.technologies.map((tech, index, arr) => (
               <span key={index} className="card__tech">
-                {index === tech.length - 1 ? tech + "." : tech + ","} {""}
+                {tech}
+                {index === arr.length - 1 ? "." : ", "}
               </span>
             ))}
           </div>
@@ -31,18 +32,22 @@ const Card = ({ data, index, getProjectImage }) => {
       </div>
 
       <div className="card__side card__side--back">
-        <p className="card__click">
-          Click to discover more about project. Look at code of project on
-          &nbsp;
-          <a href={data.githubLink} target="_blank" rel="noreferrer">
-            GitHub
-          </a>
-          &nbsp; or &nbsp;
-          <a href={data.netlifyLink} target="_blank" rel="noreferrer">
-            {" "}
-            visit project.
-          </a>
-        </p>
+        {data.type === "webflow" ? (
+          <img src="/images/skill-icons/webflow.png" alt={data.type} />
+        ) : (
+          <p className="card__click">
+            Click to discover more about project. Look at code of project on
+            &nbsp;
+            <a href={data.githubLink} target="_blank" rel="noreferrer">
+              GitHub
+            </a>
+            &nbsp; or &nbsp;
+            <a href={data.netlifyLink} target="_blank" rel="noreferrer">
+              {" "}
+              visit project.
+            </a>
+          </p>
+        )}
         <button
           className="btn btn__card"
           id={data.id}
