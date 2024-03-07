@@ -70,7 +70,7 @@ export const data = [
     id: 11,
     colorNumber: 1,
     image: "/images/jeka-fruit/jeka-fruit-webflow.png",
-    title: "CatCity pet shop",
+    title: "Jeka Fruit d.o.o",
     date: "February 2024",
     technologies: ["webflow"],
     githubLink: "",

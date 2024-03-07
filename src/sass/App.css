@@ -262,7 +262,7 @@ body {
 .full-name-box {
   display: flex;
   justify-content: flex-end;
-  padding: 0 10rem;
+  padding: 0 5rem 10rem;
   margin-top: -10%;
 }
 @media only screen and (max-width: 56.25em) {
